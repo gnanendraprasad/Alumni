@@ -14,11 +14,8 @@ $sql = mysqli_query($conn, "SELECT count(*) as total from signup WHERE email = '
 $row = mysqli_fetch_array($sql);
 
 if($row["total"] > 0){
-	?>
-	<?php
-	session_start();
-    $_SESSION['email']=$row['email'];
-    $_SESSION['password']=$row['password'];
+	$_SESSION["email"] = $row["email"];
+	$_SESSION["password"] = $row["password"];
 	?>
 	<script>
 		window.location.assign("../profile/profile.php");

@@ -34,7 +34,7 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <a class="btn btn-outline-light ml-md-3" href="signout.php">Logout</a>
+        <a class="btn btn-outline-light ml-md-3" href="../includes/signout.php">Logout</a>
     </nav>
   </div>
 </header>
