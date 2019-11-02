@@ -1,6 +1,5 @@
 <?php
 
-include "header.php";
 if (isset($_GET['error'])) {
 	if ($_GET['error']=='emptyfields') {
 		echo '<script>alert("Fill all the details")</script>';
@@ -37,7 +36,7 @@ if (isset($_GET['signup'])) {
 <head>
 	<title>SignUp and Login</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font.css">
 </head>
 <body>
 
