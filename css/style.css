@@ -19,6 +19,7 @@ body {
 h1 {
 	font-weight: bold;
 	margin: 0;
+	margin-bottom: 15px;
 }
 
 h2 {
@@ -35,6 +36,7 @@ p {
 
 span {
 	font-size: 12px;
+	
 }
 
 a {
@@ -86,6 +88,7 @@ input {
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
+	font-family: 'Poppins';
 	width: 100%;
 }
 

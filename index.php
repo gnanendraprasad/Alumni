@@ -36,7 +36,8 @@ if (isset($_GET['signup'])) {
 <head>
 	<title>SignUp and Login</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="css/font.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 <body>
 
@@ -44,28 +45,28 @@ if (isset($_GET['signup'])) {
 <div class="form-container sign-up-container">
 
 <form action="includes/signup.php" method="POST">
-	<h1>Create Account</h1>
-	<div class="social-container">
+	<h3>Please provide your details!!</h3>
+        <!--<div class="social-container">
 		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
 		<a href="#" class="social"><i class="fa fa-google"></i></a>
 		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
 	</div>
-	<span>or use your email for registration</span>
+	<span>or use your email for registration</span>  -->
+	<input type="text" name="usn" placeholder="USN">
 	<input type="text" name="name" placeholder="Name">
 	<input type="email" name="email" placeholder="Email">
-	<input type="password" name="password" placeholder="Password">
-	<button type="submit" name="submit-signup">SignUp</button>
+	<button type="submit" name="submit-signup">Submit</button>
 </form>
 </div>
 <div class="form-container sign-in-container">
 	<form action="includes/signin.php" method="POST">
 		<h1>Sign In</h1>
-		<div class="social-container">
+		<!-- <div class="social-container">
 		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
 		<a href="#" class="social"><i class="fa fa-google"></i></a>
 		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-	</div>
-	<span>or use your account</span>
+	</div> 
+	<span>or use your account</span> -->
 	<input type="email" name="email" placeholder="Email">
 	<input type="password" name="password" placeholder="Password">
 	<a href="#">Forgot Your Password</a>
