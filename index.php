@@ -1,7 +1,26 @@
 <?php
 
 include "header.php";
-
+if (isset($_GET['error'])) {
+	if ($_GET['error']=='emptyfields') {
+		echo '<script>alert("Fill all the details")</script>';
+	}
+	else if ($_GET['error']=='sqlerror') {
+		echo '<script>alert("Refresh and try again")</script>';
+	}
+	else if ($_GET['error']=='invalidPassword') {
+		echo '<script>alert("Incorrect password")</script>';
+	}
+	else if ($_GET['error']=='invalidemail') {
+		echo '<script>alert("Invalid Email")</script>';
+	}
+	else if ($_GET['error']=='invalidmailuid') {
+		echo '<script>alert("Invalid email and username")</script>';
+	}
+	else if($_GET['error']=='useralreadyexist') {
+		echo '<script>alert("User Already Exist, Dont play with me nigga")</script>';
+	}
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +46,7 @@ include "header.php";
 	<input type="text" name="name" placeholder="Name">
 	<input type="email" name="email" placeholder="Email">
 	<input type="password" name="password" placeholder="Password">
-	<button>SignUp</button>
+	<button type="submit" name="submit-signup">SignUp</button>
 </form>
 </div>
 <div class="form-container sign-in-container">
@@ -64,11 +83,3 @@ include "header.php";
 <script type="text/javascript" src="js/signinc.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
