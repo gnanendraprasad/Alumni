@@ -14,11 +14,20 @@ if (isset($_GET['error'])) {
 	else if ($_GET['error']=='invalidemail') {
 		echo '<script>alert("Invalid Email")</script>';
 	}
+	else if ($_GET['error']=='invalidusername') {
+		echo '<script>alert("Invalid Username")</script>';
+	}	
 	else if ($_GET['error']=='invalidmailuid') {
 		echo '<script>alert("Invalid email and username")</script>';
 	}
 	else if($_GET['error']=='useralreadyexist') {
 		echo '<script>alert("User Already Exist, Dont play with me nigga")</script>';
+	}
+}
+
+if (isset($_GET['signup'])) {
+	if ($_GET['signup']=='success') {
+		echo '<script>alert("SignUp Success. u can now f with my web app")</script>';
 	}
 }
 ?>

@@ -26,6 +26,7 @@ if($row["total"] > 0){
 else{
 	?>
 	<script>
+	window.location.assign("../index.php");
 		alert('Login failed');
 	</script>
 	<?php

@@ -9,7 +9,7 @@
   </head>
 
   <body>
-<header class="bg-dark" style="position:fixed; top:0px; width:100%">
+<header class="bg-dark" style="position:fixed; top:0px; width:100%; color:#ff416c">
     <nav class="navbar navbar-expand-md" style="height:50px">
       <a class="navbar-brand" href="#">
         <img src="./imgs/logo.png" height="30" alt="image">
@@ -37,5 +37,7 @@
     </nav>
   </div>
 </header>
+
+
   </body>
 </html>

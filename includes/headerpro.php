@@ -2,14 +2,20 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.0/css/froala_blocks.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- MeanMenu CSS -->
+    <link rel="stylesheet" href="https://techsolutionshere.com/wp-content/themes/techsolution/assets/blog-post-css-js/meanmenu.css">
+    <style>
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+    </style>
   </head>
 
   <body>
-<header class="bg-dark" style="position:fixed; top:0px; width:100%">
+<!-- <header class="bg-dark" style="position:fixed; top:0px; width:100%">
     <nav class="navbar navbar-expand-md" style="height:50px">
       <a class="navbar-brand" href="#">
         <img src="./imgs/logo.png" height="30" alt="image">
@@ -37,7 +43,66 @@
         <a class="btn btn-outline-light ml-md-3" href="../includes/signout.php">Logout</a>
     </nav>
   </div>
-</header>
+</header> -->
+
+<!-- Start Navbar Area -->
+<div class="navbar-area">
+	<!-- Menu For Mobile Device -->
+	<div class="mobile-nav">
+		<a href="#" class="logo">
+			Logo
+		</a>
+	</div>
+
+	<!-- Menu For Desktop Device -->
+	<div class="main-nav">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light">
+				<a class="navbar-brand" href="#">
+					Logo
+				</a>
+				<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Contact</a>
+						</li>
+						<li class="nav-item">
+            <a class="nav-link" href="../includes/signout.php">Logout</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a href="#" class="nav-link dropdown-toggle">Pages</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="#" class="nav-link">About</a>
+								</li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- End Navbar Area -->
+	<!-- JQuery Min JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- MeanMenu JS -->
+<script src="https://techsolutionshere.com/wp-content/themes/techsolution/assets/blog-post-css-js/jquery.meanmenu.js"></script>
+<script>
+	// Mean Menu
+	jQuery('.mean-menu').meanmenu({
+		meanScreenWidth: "991"
+	});
+</script>
   </body>
 </html>
         

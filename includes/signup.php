@@ -4,7 +4,10 @@ require "config.php";
 
 $name = $_POST["name"];
 $email = $_POST["email"];
+$salt = "alumnispace";
 $password = $_POST["password"];
+$password_encrypted = sha1($password.$salt);
+
 if (empty($name) || empty($email) || empty($password)) {
 	header("Location: ../index.php?error=emptyfields&uid=.$name.&mail=.$email");
 	exit();
@@ -45,8 +48,8 @@ else{
 			exit();
 		}
 		else{
-			$hashedpassword=password_hash($password, PASSWORD_DEFAULT);
-			mysqli_stmt_bind_param($stmt,"sss",$name,$email,$hashedpassword);
+			//$hashedpassword=password_hash($password, PASSWORD_DEFAULT); //used sha1 instead of hash
+			mysqli_stmt_bind_param($stmt,"sss",$name,$email,$password_encrypted);
 			mysqli_stmt_execute($stmt);
 			header("Location: ../index.php?signup=success");
 			exit();
