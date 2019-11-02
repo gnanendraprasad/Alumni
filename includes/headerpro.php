@@ -50,7 +50,7 @@
 	<!-- Menu For Mobile Device -->
 	<div class="mobile-nav">
 		<a href="#" class="logo">
-			Logo
+			Alumni
 		</a>
 	</div>
 
