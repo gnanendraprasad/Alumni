@@ -25,7 +25,7 @@ elseif (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z]*$/
 	exit();
 }
 else{
-$sql="select user_usn from users where user_usn=?";
+$sql="select usn from unreg where usn=?";
 $stmt=mysqli_stmt_init($conn);
 if(!mysqli_stmt_prepare($stmt,$sql)){
 	header("Location: ../index.php?error=sqlerror");
@@ -41,19 +41,38 @@ else{
 		exit();
 	}
 	else{
-		$sql="insert into unreg(name,email,usn) values(?,?,?)";
+		$sql="select user_usn from users where user_usn=?";
 		$stmt=mysqli_stmt_init($conn);
 		if(!mysqli_stmt_prepare($stmt,$sql)){
 			header("Location: ../index.php?error=sqlerror");
 			exit();
 		}
 		else{
-			//$hashedpassword=password_hash($password, PASSWORD_DEFAULT); //used sha1 instead of hash
-			mysqli_stmt_bind_param($stmt,"sss",$name,$email,$password);
+			mysqli_stmt_bind_param($stmt,"s",$password);
 			mysqli_stmt_execute($stmt);
-			header("Location: ../index.php?signup=success");
-			exit();
+			mysqli_stmt_store_result($stmt);
+			$resultcheck=mysqli_stmt_num_rows($stmt);
+			if ($resultcheck>0) {
+				header("Location: ../index.php?error=useralreadysignedup&mail=.$email");
+				exit();
+			}
+			else{
+				$sql="insert into unreg(name,email,usn) values(?,?,?)";
+				$stmt=mysqli_stmt_init($conn);
+				if(!mysqli_stmt_prepare($stmt,$sql)){
+					header("Location: ../index.php?error=sqlerror");
+					exit();
+				}
+				else{
+					//$hashedpassword=password_hash($password, PASSWORD_DEFAULT); //used sha1 instead of hash
+					mysqli_stmt_bind_param($stmt,"sss",$name,$email,$password);
+					mysqli_stmt_execute($stmt);
+					header("Location: ../index.php?signup=success");
+					exit();
+			}
+			}
 	}
+
 }
 }
 }

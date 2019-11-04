@@ -27,12 +27,25 @@ if($row["total"] > 0){
 	<?php
 }
 elseif ($roww["flag"]=='0') {
-	?>
-	<script>
-		window.location.assign("../index.php");
-		alert('Not yet accepted, please sign up if you have not registered yet');
-	</script>
-	<?php
+	$sql="select user_usn from users where user_usn=? or user_email=?";
+	$stmt=mysqli_stmt_init($conn);
+	if(!mysqli_stmt_prepare($stmt,$sql)){
+		header("Location: ../index.php?error=sqlerror");
+		exit();
+	}
+	else{
+		mysqli_stmt_bind_param($stmt,"ss",$email,$email);
+		mysqli_stmt_execute($stmt);
+		mysqli_stmt_store_result($stmt);
+		$resultcheck=mysqli_stmt_num_rows($stmt);
+		if ($resultcheck>0) {
+			header("Location: ../index.php?error=useralreadysignedup");
+			exit();
+		}
+		else{
+			header("Location: onetime/once.php");
+			}
+		}
 }
 }
 else{

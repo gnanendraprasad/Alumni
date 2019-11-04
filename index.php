@@ -22,6 +22,9 @@ if (isset($_GET['error'])) {
 	else if($_GET['error']=='useralreadyexist') {
 		echo '<script>alert("User Already Exist, wait for mail")</script>';
 	}
+	else if($_GET['error']=='useralreadysignedup') {
+		echo '<script>alert("User Already Exist, wait for acceptance.")</script>';
+	}
 }
 
 if (isset($_GET['signup'])) {
