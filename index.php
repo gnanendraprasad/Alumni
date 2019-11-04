@@ -15,7 +15,7 @@ if (isset($_GET['error'])) {
 	}
 	else if ($_GET['error']=='invalidusername') {
 		echo '<script>alert("Invalid Username")</script>';
-	}	
+	}
 	else if ($_GET['error']=='invalidmailuid') {
 		echo '<script>alert("Invalid email and username")</script>';
 	}
@@ -65,9 +65,9 @@ if (isset($_GET['signup'])) {
 		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
 		<a href="#" class="social"><i class="fa fa-google"></i></a>
 		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-	</div> 
+	</div>
 	<span>or use your account</span> -->
-	<input type="email" name="email" placeholder="Email">
+	<input type="text" name="email" placeholder="Email">
 	<input type="password" name="password" placeholder="Password">
 	<a href="#">Forgot Your Password</a>
 
