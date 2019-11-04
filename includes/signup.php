@@ -4,7 +4,7 @@ require "config.php";
 
 $name = $_POST["name"];
 $email = $_POST["email"];
-$salt = "alumnispace";
+$salt = "alumni";
 $password = $_POST["password"];
 $password_encrypted = sha1($password.$salt);
 
@@ -25,7 +25,7 @@ elseif (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]
 	exit();
 }
 else{
-$sql="select name from signup where name=?";
+$sql="select name from users where name=?";
 $stmt=mysqli_stmt_init($conn);
 if(!mysqli_stmt_prepare($stmt,$sql)){
 	header("Location: ../index.php?error=sqlerror");
