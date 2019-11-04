@@ -20,13 +20,13 @@ if (isset($_GET['error'])) {
 		echo '<script>alert("Invalid email and username")</script>';
 	}
 	else if($_GET['error']=='useralreadyexist') {
-		echo '<script>alert("User Already Exist, Dont play with me nigga")</script>';
+		echo '<script>alert("User Already Exist, wait for mail")</script>';
 	}
 }
 
 if (isset($_GET['signup'])) {
 	if ($_GET['signup']=='success') {
-		echo '<script>alert("SignUp Success. u can now f with my web app")</script>';
+		echo '<script>alert("SignUp Success. we will send u mail shortly")</script>';
 	}
 }
 ?>
@@ -67,7 +67,7 @@ if (isset($_GET['signup'])) {
 		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
 	</div>
 	<span>or use your account</span> -->
-	<input type="text" name="email" placeholder="Email">
+	<input type="text" name="email" placeholder="USN or Email">
 	<input type="password" name="password" placeholder="Password">
 	<a href="#">Forgot Your Password</a>
 
