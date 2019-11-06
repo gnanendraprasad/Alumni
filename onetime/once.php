@@ -18,6 +18,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!--//online-fonts -->
 
+<!-- Date Picker -->
+
+<!-- //Date Picker -->
+
 </head>
 <body>
 <div class="header">
@@ -55,13 +59,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="clear"></div>
 				</div>
 				
-				<div class="w3-dob">
+				<div class="w3-user">
 				<span id="data">Date of Birth</span> 
-				<input type="date" name="dob" value="dob" required="">
+				<div class="#">
+				<input type="date" id="#" name="dob" value="dob" required="">
+				</div>
 					<div class="clear"></div>
 				</div>
 
-				<div class="w3l-gender">
+				<div class="w3l-user">
 					<span id="data">Gender</span>
 					<li><input type="radio" name="gender" value="Male" required="">Male
 					<li><input type="radio" name="gender" value="Female" required="">Female
@@ -69,55 +75,54 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="clear"></div>
 				</div>
 
+				<div class="w3l-email">
+					<span><i class="fa fa-envelope-o w3l-3" aria-hidden="true"></i></span>
+					<input type="email" name="email" placeholder="info@example.com" required=""/>
+					<div class="clear"></div>
+				</div>
+
 				<div class="w3l-user">
-					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
+					<span><i class="fa fa-graduation-cap w3l-1" aria-hidden="true"></i></span>
+					<input type="text" name="branch" placeholder="Engineering Branch" required=""/>
+					<div class="clear"></div>
+				</div>
+
+				<div class="w3l-user">	
+					<span><i class="fa fa-mobile w3l-4" aria-hidden="true"></i></span>
+					<input type="text" name="phone" placeholder="+91" required=""/>
+					<div class="clear"></div>
+				</div>
+
+				<div class="w3l-user">
+					<span><i class="fa fa-address-book w3l-1" aria-hidden="true"></i></span>
+					<input type="text" name="address" placeholder="Address" required=""/>
+					<div class="clear"></div>
+				</div>
+
+				<div class="w3l-user">
+					<span><i class="fa fa-university w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="higher_studies" placeholder="Higher Studies" required=""/>
 					<div class="clear"></div>
 				</div>
 
 				<div class="w3l-user">
-					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
+					<span><i class="fa fa-briefcase w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="job" placeholder="Job" required=""/>
 					<div class="clear"></div>
 				</div>
 
-				<div class="w3l-user">
-					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
-					<input type="text" name="branch" placeholder="Engineering Branch" required=""/>
-					<div class="clear"></div>
-				</div>
-
-				<div class="w3l-user">
-					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
-					<input type="text" name="address" placeholder="Address" required=""/>
-					<div class="clear"></div>
-				</div>
-				
 				<!-- <div class="w3l-password">
 					<span><i class="fa fa-lock w3l-2" aria-hidden="true"></i></span>
 					<input type="password" name="password" placeholder="password" required=""/>
 					<div class="clear"></div>
 				</div> -->
 				
-				<!-- <div class="w3l-email">
-					<span><i class="fa fa-envelope-o w3l-3" aria-hidden="true"></i></span>
-					<input type="email" name="email" placeholder="info@example.com" required=""/>
-					<div class="clear"></div>
-				</div>
-				-->
-
 				<div class="w3l-user">
-					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
+					<span><i class="fa fa-cogs w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="skills" placeholder="skills" required=""/>
 					<div class="clear"></div>
 				</div>
 
-				<div class="w3l-phone">	
-					<span><i class="fa fa-mobile w3l-4" aria-hidden="true"></i></span>
-					<input type="text" name="phone" placeholder="+91" required=""/>
-					<div class="clear"></div>
-				</div>
-				
 				<div class="w3l-btn">
 					<input type="submit" name="submit" value="submit"/>
 				</div>
