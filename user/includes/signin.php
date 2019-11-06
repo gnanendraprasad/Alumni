@@ -51,7 +51,7 @@ elseif ($roww["flag"]=='0') {
 else{
 	?>
 	<script>
-	window.location.assign("../index.php");
+	window.location.assign("../../index.php");
 		alert('user not exist');
 	</script>
 	<?php

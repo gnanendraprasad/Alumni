@@ -1,3 +1,11 @@
+<?
+
+include "../../admin/config/Database.php"
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -64,16 +72,19 @@
 				<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a href="#" class="nav-link active">Home</a>
+							<a href="../profile/profile.php" class="nav-link active">Home</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Gallery</a>
+							<a href="../profile/mypost.php" class="nav-link">My Posts</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">About</a>
+							<a href="../profile/gallery.php" class="nav-link">Gallery</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Contact</a>
+							<a href="../profile/about.php" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="../profile/contact.php" class="nav-link">Contact</a>
 						</li>
 						<li class="nav-item">
             <a class="nav-link" href="../includes/signout.php">Logout</a>
