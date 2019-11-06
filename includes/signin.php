@@ -43,7 +43,7 @@ elseif ($roww["flag"]=='0') {
 			exit();
 		}
 		else{
-			header("Location: onetime/once.php");
+			header("Location: ../onetime/once.php");
 			}
 		}
 }
