@@ -102,6 +102,7 @@ include "../../admin/config/Database.php"
 			</nav>
 		</div>
 	</div>
+
 </div>
 <!-- End Navbar Area -->
 	<!-- JQuery Min JS -->
@@ -116,4 +117,3 @@ include "../../admin/config/Database.php"
 </script>
   </body>
 </html>
-        
