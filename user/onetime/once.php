@@ -46,7 +46,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 					<input type="text" name="usn" placeholder="USN" required=""/>
 					<div class="clear"></div></tr>
 				</div>
-				<tr><div class="w3l-user">
+			<!--	<tr><div class="w3l-user">
 					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
 <<<<<<< HEAD
 					<input type="text" name="middle_name" placeholder="middle name" required=""/>
@@ -57,15 +57,16 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 					<input type="text" name="last_name" placeholder="last name" required=""/>
 					<div class="clear"></div>
 				</div>
-				
+
 				<div class="w3-user">
-				<span id="data">Date of Birth</span> 
+				<span id="data">Date of Birth</span>
 				<div class="#">
 				<input type="date" id="#" name="dob" value="dob" required="">
-				</div>
-=======
+			</div>-->
+	<tr><div class="w3l-user">
+			<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="name" placeholder="name" required=""/>
->>>>>>> 954fdf9c2f6c272f1b1917a0e6cee945d286b501
+<div class="clear"></div></tr>
 					<div class="clear"></div>
 					</div></tr>
 
@@ -76,7 +77,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 				</div>
 				<br>
 
-<<<<<<< HEAD
+
 				<div class="w3l-user">
 					<span id="data">Gender</span>
 					<li><input type="radio" name="gender" value="Male" required="">Male
@@ -91,21 +92,21 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 					<div class="clear"></div>
 				</div>
 
-				<div class="w3l-user">
+				<!--<div class="w3l-user">
 					<span><i class="fa fa-graduation-cap w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="branch" placeholder="Engineering Branch" required=""/>
 					<div class="clear"></div>
-				</div>
+				</div>-->
 
-				<div class="w3l-user">	
-					<span><i class="fa fa-mobile w3l-4" aria-hidden="true"></i></span>
-					<input type="text" name="phone" placeholder="+91" required=""/>
-=======
+
+
+
 				 <div class="w3l-gender">
-					<tr><span id="data">Gender:</span></tr>
-					<tr><li><input type="radio" name="gender" value="Male" required="">Male<br>
-					<li><input type="radio" name="gender" value="Female" required="">Female<br>
-					<li><input type="radio" name="gender" value="Other" required="">Other</tr>
+					<tr><span id="data">Branch:</span></tr>
+					<tr><li><input type="radio" name="branch" value="cse" required="">CSE<br>
+					<li><input type="radio" name="branch" value="ece" required="">ECE<br>
+					<li><input type="radio" name="branch" value="eee" required="">EEE</tr>
+					<li><input type="radio" name="branch" value="me" required="">ME</tr>
 					<div class="clear"></div>
 				</div>
 
@@ -122,28 +123,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 					<div class="clear"></div>
 				</div>-->
 
-				<div class="w3l-user">
-<<<<<<< HEAD
+			<!--	<div class="w3l-user">
+
 					<span><i class="fa fa-university w3l-1" aria-hidden="true"></i></span>
-					<input type="text" name="higher_studies" placeholder="Higher Studies" required=""/>
-=======
-					<tr><span id="data">Branch:</span></tr>
-					<tr><li><input type="radio" name="branch" value="CSE" required="">CSE<br>
-					<li><input type="radio" name="branch" value="ECE" required="">ECE<br>
-					<li><input type="radio" name="branch" value="CVE" required="">CVE<br>
-						<li><input type="radio" name="branch" value="ME" required="">ME<br>
->>>>>>> 954fdf9c2f6c272f1b1917a0e6cee945d286b501
-					<div class="clear"></div>
-				</div>
+					<input type="text" name="higher_studies" placeholder="Higher Studies" required=""/>-->
+
+
 
 				<div class="w3l-user">
-<<<<<<< HEAD
-					<span><i class="fa fa-briefcase w3l-1" aria-hidden="true"></i></span>
-					<input type="text" name="job" placeholder="Job" required=""/>
-=======
+
+
 					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="batch" placeholder="Batch year pass out" required=""/>
->>>>>>> 954fdf9c2f6c272f1b1917a0e6cee945d286b501
+
 					<div class="clear"></div>
 				</div>
 
@@ -152,9 +144,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 					<input type="password" name="password" placeholder="password" required=""/>
 					<div class="clear"></div>
 				</div> -->
-<<<<<<< HEAD
-				
-=======
+
+
 
 				<!-- <div class="w3l-email">
 					<span><i class="fa fa-envelope-o w3l-3" aria-hidden="true"></i></span>
@@ -163,28 +154,21 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 				</div>
 				-->
 
->>>>>>> 954fdf9c2f6c272f1b1917a0e6cee945d286b501
+
 				<div class="w3l-user">
 					<span><i class="fa fa-cogs w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="skills" placeholder="skills" required=""/>
 					<div class="clear"></div>
 				</div>
 
-<<<<<<< HEAD
-=======
+
 				<div class="w3l-phone">
 					<span><i class="fa fa-mobile w3l-4" aria-hidden="true"></i></span>
 					<input type="text" name="phone" placeholder="+91" required=""/>
 					<div class="clear"></div>
 				</div>
 
-				<div class="w3l-user">
-					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
-					<input type="email" name="email" placeholder="Email" required=""/>
-					<div class="clear"></div>
-				</div>
 
->>>>>>> 954fdf9c2f6c272f1b1917a0e6cee945d286b501
 				<div class="w3l-btn">
 					<input type="submit" name="submit-once" value="submit"/>
 				</div>

@@ -85,6 +85,15 @@ function showStudents(){
 
 }
 
+function showSession(){
+
+	$db = Database::getInstance();
+	$mysqli = $db->getConnection();
+	$query = "SELECT * FROM unreg  ";
+	$stmt= $mysqli->query($query);
+	return $stmt;
+
+}
 
 
 function edit_course($cshort,$cfull,$id){
@@ -127,6 +136,19 @@ function del_std($id){
     echo "<script>alert('Accepted')</script>";
     echo "<script>window.location.href='view.php'</script>";
 
+}
+function del_subject($id){
+
+		//echo $id;exit;
+	 $db = Database::getInstance();
+	 $mysqli = $db->getConnection();
+	 $hash_id=password_hash($id,PASSWORD_DEFAULT);
+	 $query="insert into login(log_id,log_pwd) values(?,?)";
+	 $stmt= $mysqli->prepare($query);
+	 $stmt->bind_param('ss',$id,$hash_id);
+ $stmt->execute();
+	 echo "<script>alert('User has been added.')</script>";
+	// echo "<script>window.location.href='view-course.php'</script>";
 }
 
 

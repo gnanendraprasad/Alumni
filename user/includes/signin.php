@@ -4,12 +4,11 @@ include "config.php";
 
 $email = strtolower($_POST["email"]);
 $password = $_POST["password"];
-/*$salt = "alumni";
-$password_encrypted = sha1($password.$salt);*/
+$hash_password = password_hash($password, PASSWORD_DEFAULT);
 
 
 $sql = mysqli_query($conn, "SELECT count(*) as total from login WHERE log_id='".$email."' or log_email='".$email."' and
-	log_pwd = '".$password."' ");
+	log_pwd = '".$hash_password."' ");
 
 $row = mysqli_fetch_array($sql);
 
@@ -24,7 +23,7 @@ elseif ($roww["flag"]=='0') {
 	$sql="select user_usn from users where user_usn=? or user_email=?";
 	$stmt=mysqli_stmt_init($conn);
 	if(!mysqli_stmt_prepare($stmt,$sql)){
-		header("Location: ../index.php?error=sqlerror");
+		header("Location: ../userlogin.php?error=sqlerror");
 		exit();
 	}
 	else{
@@ -33,7 +32,7 @@ elseif ($roww["flag"]=='0') {
 		mysqli_stmt_store_result($stmt);
 		$resultcheck=mysqli_stmt_num_rows($stmt);
 		if ($resultcheck>0) {
-			header("Location: ../index.php?error=useralreadysignedup");
+			header("Location: ../userlogin.php?error=useralreadysignedup");
 			exit();
 		}
 		else{

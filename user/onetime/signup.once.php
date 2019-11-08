@@ -20,7 +20,7 @@ elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	header("Location: ../onetime/once.php?error=invalidemail");
 	exit();
 }
-elseif (!preg_match("/^[a-zA-Z]*$/", $name)) {
+elseif (!preg_match("/^[a-zA-Z\ ]*$/", $name)) {
 	header("Location: ../onetime/once.php?error=invalidusername");
 	exit();
 }
@@ -43,7 +43,7 @@ else{
 					//$hashedpassword=password_hash($password, PASSWORD_DEFAULT); //used sha1 instead of hash
 					mysqli_stmt_bind_param($stmt,"sssssssds",$usn,$email,$name,$dob,$gender,$branch,$batch,$phno,$skills);
 					mysqli_stmt_execute($stmt);
-					header("Location: ../index.php?signup=success");
+					header("Location: ../userlogin.php?signup=success");
 					exit();
 			}
 			}
