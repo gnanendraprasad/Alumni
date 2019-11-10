@@ -8,7 +8,8 @@
   list-style: none;
 }
 
-li {
-  list-style-type: none;
-  padding-right: 50%;
+.all-posts {
+  position: relative;
+  height: 150px;
+  width: 150px;
 }
