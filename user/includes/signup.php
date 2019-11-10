@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST["submit-signup"])) {
 require "config.php";
 

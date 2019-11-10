@@ -1,0 +1,14 @@
+.newpostbutton {
+  position: relative;
+  padding-top: 150px;
+  padding-left: 10px;
+}
+
+#cpost {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+  padding-right: 50%;
+}

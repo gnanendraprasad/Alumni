@@ -1,5 +1,5 @@
 <?
-
+session_start();
 include "../../admin/config/Database.php"
 
 ?>
