@@ -13,21 +13,23 @@
     </div>
     <div class="all-posts">
       <?php
-      $sql="Select * from post";
+      $sql="Select * from post order by ptype";
       if ($result = $conn->query($sql)) {
-
     /* fetch associative array */
     while ($row = $result->fetch_assoc()) {
+        $fieldid = $row["pid"];
+        $fielduser = $row["user_id"];
         $field1name = $row["ptype"];
         $field2name = $row["description"];
 
-        echo '<b>'.$field1name.$field2name.'</b><br />';
+        echo '<div class="fields"><div class="newline">'.$field1name.' '.$field2name.'<button>EDIT</button><button><a href="deletepost.php">DELETE</a></button></div></div>';
     }
+
 
     /* free result set */
     $result->free();
-}
-?>
+   }
+  ?>
     </div>
 
 
