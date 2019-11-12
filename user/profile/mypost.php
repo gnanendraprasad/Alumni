@@ -18,6 +18,7 @@
     /* fetch associative array */
     while ($row = $result->fetch_assoc()) {
         $fieldid = $row["pid"];
+<<<<<<< HEAD
         $fieldtime = $row["time"];
         $field1name = $row["ptype"];
         $field2name = $row["description"];
@@ -46,6 +47,13 @@
         <?php
         '</div>';
 
+=======
+        $fielduser = $row["user_id"];
+        $field1name = $row["ptype"];
+        $field2name = $row["description"];
+
+        echo '<div class="fields"><div class="newline">'.$field1name.' '.$field2name.'<button>EDIT</button><button><a href="deletepost.php">DELETE</a></button></div></div>';
+>>>>>>> d641fbad8b3f90735a178f09218027c0a82c13dc
     }
 
 
