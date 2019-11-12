@@ -13,21 +13,46 @@
     </div>
     <div class="all-posts">
       <?php
-      $sql="Select * from post";
+      $sql="Select * from post order by ptype";
       if ($result = $conn->query($sql)) {
-
     /* fetch associative array */
     while ($row = $result->fetch_assoc()) {
+        $fieldid = $row["pid"];
+        $fieldtime = $row["time"];
         $field1name = $row["ptype"];
         $field2name = $row["description"];
 
-        echo '<b>'.$field1name.$field2name.'</b><br />';
+        /*To set date and time for each post
+
+        date_default_timezone_set('Asia/Kolkata');
+        $timestamp = $_SERVER['REQUEST_TIME'];
+        $date = date('d/m/Y h:i:sa', time());
+        */
+
+        echo '<div class="fields"><div class="newline">'.$field1name.' '.$field2name.' '.$fieldtime.'</div>'
+        ?>
+
+        <!--- Fetching the current log_id using post method to edit post-->
+        <form action="editpost.php" method="post">
+        <input type="hidden" name="fieldid" value="<?php echo $fieldid;?>">
+        <button type="submit" name="edit-submit" >Edit</button>
+        </form>
+
+        <!--- Fetching the current log_id using post method to delete post-->
+        <form action="deletepost.php" method="post">
+        <input type="hidden" name="fieldid" value="<?php echo $fieldid;?>">
+        <button type="submit" >Delete</button>
+        </form>
+        <?php
+        '</div>';
+
     }
+
 
     /* free result set */
     $result->free();
-}
-?>
+   }
+  ?>
     </div>
 
 
