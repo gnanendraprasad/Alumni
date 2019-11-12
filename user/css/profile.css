@@ -1,0 +1,38 @@
+.newsevents {
+	padding-top: 140px;
+	height: 480px;
+	width: 100%;
+}
+
+.news-profile {
+	display: inline-block;
+	padding-left: 20px;
+	width: 60%;
+	height: 320px;
+}
+
+.events-profile {
+	display: inline-block;
+	padding-left: 10px;
+	width: 35%;
+	height: 320px;
+}
+
+.jobs-profile {
+	display: block;
+	position: absolute;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	height: 120px;
+}
+h2 {
+	font-style: bold;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+
+.breakline {
+	white-space: pre;
+}

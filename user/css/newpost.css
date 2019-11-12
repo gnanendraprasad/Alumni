@@ -1,0 +1,31 @@
+.newpostbutton {
+  position: relative;
+  padding-top: 150px;
+  padding-left: 10px;
+}
+
+#cpost {
+  list-style: none;
+}
+
+.all-posts {
+  position: relative;
+  height: 150px;
+  width: 50%;
+}
+
+.newline {
+	white-space: pre;
+	height: 30px;
+	padding: 10px 0px 10px 10px;
+}
+
+.fields {
+	position: relative;
+	width: 100%;
+}
+
+.body {
+	width: 100%;
+	height: 100%;
+}
