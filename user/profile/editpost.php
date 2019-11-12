@@ -11,6 +11,8 @@ require "newpost.php";
 
 
 ?>
+
+// Need to workon edit post
 <div class="form-edit">
 <p><a href="mypost.php">My Posts</a> </p>
 <h1>Update Record</h1>
@@ -33,12 +35,12 @@ echo '<p style="color:#FF0000;">'.$status.'</p>';
 }else {
 ?>
 <div>
-<form name="form" method="post" action=""> 
+<form name="form" method="post" action="">
 <input type="hidden" name="new" value="1" />
 <input name="id" type="hidden" value="<?php echo $row['id'];?>" />
-<p><input type="text" name="name" placeholder="Enter Name" 
+<p><input type="text" name="name" placeholder="Enter Name"
 required value="<?php echo $row['name'];?>" /></p>
-<p><input type="text" name="age" placeholder="Enter Age" 
+<p><input type="text" name="age" placeholder="Enter Age"
 required value="<?php echo $row['age'];?>" /></p>
 <p><input name="submit" type="submit" value="Update" /></p>
 </form>
