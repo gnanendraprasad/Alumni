@@ -17,7 +17,7 @@ echo "Please fill the form";
               <option value="EVENT" name="posttype">EVENT</option>
               <option value="JOB" name="posttype">JOB</option>
             </select>
-            Description <input type="text" name="description">
+            Description <input type="text-area" name="description">
             <input type="submit" name="post-submit">
         </form>
       </div>

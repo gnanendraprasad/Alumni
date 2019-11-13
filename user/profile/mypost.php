@@ -18,7 +18,6 @@
     /* fetch associative array */
     while ($row = $result->fetch_assoc()) {
         $fieldid = $row["pid"];
-        $fieldtime = $row["time"];
         $field1name = $row["ptype"];
         $field2name = $row["description"];
 
@@ -29,14 +28,14 @@
         $date = date('d/m/Y h:i:sa', time());
         */
 
-        echo '<div class="fields"><div class="newline">'.$field1name.' '.$field2name.' '.$fieldtime.'</div>'
+        echo '<div class="fields"><div class="newline">'.$field1name.' '.$field2name.'</div>'
         ?>
 
         <!--- Fetching the current log_id using post method to edit post-->
-        <form action="editpost.php" method="post">
+        <!--<form action="editpost.php" method="post">
         <input type="hidden" name="fieldid" value="<?php echo $fieldid;?>">
         <button type="submit" name="edit-submit" >Edit</button>
-        </form>
+        </form>-->
 
         <!--- Fetching the current log_id using post method to delete post-->
         <form action="deletepost.php" method="post">
