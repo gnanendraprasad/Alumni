@@ -39,10 +39,9 @@ require "../includes/config.php";
 
       /* fetch associative array */
       while ($row = $result->fetch_assoc()) {
-            $field1name = $row["ptype"];
             $field2name = $row["description"];
 
-            echo '<div class="breakline">'.$field1name." ".$field2name.'</div>';
+            echo '<li><div class="breakline">'.$field2name.'</div></li>';
             }
 
           /* free result set */
@@ -55,15 +54,15 @@ require "../includes/config.php";
       <div class="events-profile">
         <h2>EVENTS</h2>
         <?php
-       $sql="Select * from post where ptype='EVENTS'";
+       $sql="Select * from post where ptype='EVENT'";
        if ($result = $conn->query($sql)) {
 
       /* fetch associative array */
       while ($row = $result->fetch_assoc()) {
-            $field1name = $row["ptype"];
+            
             $field2name = $row["description"];
 
-            echo '<div class="breakline">'.$field1name." ".$field2name.'</div>';
+            echo '<li><div class="breakline">'.$field2name.'</div></li>';
             }
 
           /* free result set */
@@ -77,15 +76,14 @@ require "../includes/config.php";
       <div class="jobs-profile">
         <h2>JOBS</h2>
         <?php
-       $sql="Select * from post where ptype='JOBS'";
+       $sql="Select * from post where ptype='JOB'";
        if ($result = $conn->query($sql)) {
 
       /* fetch associative array */
       while ($row = $result->fetch_assoc()) {
-            $field1name = $row["ptype"];
             $field2name = $row["description"];
 
-            echo '<div class="breakline">'.$field1name." ".$field2name.'</div>';
+            echo '<li><div class="breakline">'.$field2name.'</div></li>';
             } 
 
           /* free result set */
