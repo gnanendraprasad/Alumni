@@ -5,7 +5,7 @@
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="User Profile Form A Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<meta name="keywords" content="#" />
 <!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 <!-- Meta tag Keywords -->
@@ -18,9 +18,20 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!--//online-fonts -->
 
-<!-- Date Picker -->
+<!-- custom css -->
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<!-- //custom css -->
 
-<!-- //Date Picker -->
+
+<!--- date picker -->
+<!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+<link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet"> -->
+
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="#"></script>
+<!--- // date picker -->
+
 
 </head>
 <body>
@@ -41,10 +52,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 
 				<tr><h3>Please fill the details</h3></tr>
 
-				<tr><div class="w3l-user">
+				<div class="w3l-user">
 					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="usn" placeholder="USN" required=""/>
-					<div class="clear"></div></tr>
+					<div class="clear"></div>
 				</div>
 			<!--	<tr><div class="w3l-user">
 					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
@@ -63,26 +74,24 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 				<div class="#">
 				<input type="date" id="#" name="dob" value="dob" required="">
 			</div>-->
-	<tr><div class="w3l-user">
-			<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
+					<div class="w3l-user">
+					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="name" placeholder="name" required=""/>
-<div class="clear"></div></tr>
 					<div class="clear"></div>
-					</div></tr>
+					</div>
 
-				<tr><div class="w3-dob">
-				<span id="data">Date of Birth</span></tr>
-				<tr><input type="date" name="dob" value="dob" required="">
-					<div class="clear"></div></tr>
+				<tr><div class="w31-dob">
+				<!-- <span id="data"><i class="fa fa-calendar w3l-3" aria-hidden="true"></i></span> -->
+				<input type="text" id="datep" name="dob" value="dob" required="">
 				</div>
-				<br>
-
 
 				<div class="w3l-user">
-					<span id="data">Gender</span>
-					<li><input type="radio" name="gender" value="Male" required="">Male
-					<li><input type="radio" name="gender" value="Female" required="">Female
-					<li><input type="radio" name="gender" value="Other" required="">Other
+					<span id="data"><i class="fa fa-user w3l-3" aria-hidden="true"></i> Gender</span>
+					<ul class="dob">
+					<li><input type="radio" name="gender" value="Male" required="">Male</li>
+					<li><input type="radio" name="gender" value="Female" required="">Female</li>
+					<li><input type="radio" name="gender" value="Other" required="">Other</li>
+					</ul>
 					<div class="clear"></div>
 				</div>
 
@@ -101,12 +110,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 
 
 
-				 <div class="w3l-gender">
-					<tr><span id="data">Branch:</span></tr>
-					<tr><li><input type="radio" name="branch" value="cse" required="">CSE<br>
-					<li><input type="radio" name="branch" value="ece" required="">ECE<br>
-					<li><input type="radio" name="branch" value="eee" required="">EEE</tr>
-					<li><input type="radio" name="branch" value="me" required="">ME</tr>
+				<div class="w3l-branch">
+					
+					<span id="data"><i class="fa fa-book w3l-1" aria-hidden="true"></i>	Branch</span>
+					<ul class="branch">
+					<li><input type="radio" name="branch" value="cse" required="">CSE</li>
+					<li><input type="radio" name="branch" value="ece" required="">ECE</li>
+					<li><input type="radio" name="branch" value="eee" required="">EEE</li>
+					<li><input type="radio" name="branch" value="me" required="">ME</li>
+					</ul>
 					<div class="clear"></div>
 				</div>
 
@@ -128,14 +140,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 					<span><i class="fa fa-university w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="higher_studies" placeholder="Higher Studies" required=""/>-->
 
-
-
-				<div class="w3l-user">
-
-
-					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
-					<input type="text" name="batch" placeholder="Batch year pass out" required=""/>
-
+				<div class="w3l-batch">
+					<span><i class="fa fa-graduation-cap w3l-1" aria-hidden="true"></i></span>
+					<input type="text" name="batch" placeholder="Batch Year" required=""/>
 					<div class="clear"></div>
 				</div>
 
@@ -179,5 +186,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 <footer>
 <h4>Note: Please ensure all the details are correct and will be validated.</h4>
 </footer>
+
+<script type="text/javascript" src="js/date.js"></script>
 </body>
 </html>
