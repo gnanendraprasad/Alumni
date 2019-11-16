@@ -24,12 +24,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 
 
 <!--- date picker -->
-<!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
-<link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet"> -->
 
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js" rel="stylesheet" />
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-    <script src="#"></script>
 <!--- // date picker -->
 
 
@@ -74,6 +69,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 				<div class="#">
 				<input type="date" id="#" name="dob" value="dob" required="">
 			</div>-->
+
+
 					<div class="w3l-user">
 					<span><i class="fa fa-user-circle-o w3l-1" aria-hidden="true"></i></span>
 					<input type="text" name="name" placeholder="name" required=""/>
@@ -81,13 +78,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 					</div>
 
 				<tr><div class="w31-dob">
-				<!-- <span id="data"><i class="fa fa-calendar w3l-3" aria-hidden="true"></i></span> -->
-				<input type="text" id="datep" name="dob" value="dob" required="">
+				<span class="customtext" id="data"><i class="fa fa-calendar w3l-3" id="cicon" aria-hidden="true"></i>DOB</span>
+				<input type="date" id="datepicker" name="dob" value="dob" required="">
+				<div class="empty"></div>
 				</div>
 
 				<div class="w3l-user">
-					<span id="data"><i class="fa fa-user w3l-3" aria-hidden="true"></i> Gender</span>
-					<ul class="dob">
+					<span class="customtext" id="data"><i class="fa fa-user w3l-3" id="cicon" aria-hidden="true"></i>Gender</span>
+					<ul class="gender">
 					<li><input type="radio" name="gender" value="Male" required="">Male</li>
 					<li><input type="radio" name="gender" value="Female" required="">Female</li>
 					<li><input type="radio" name="gender" value="Other" required="">Other</li>
@@ -112,7 +110,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>-->
 
 				<div class="w3l-branch">
 					
-					<span id="data"><i class="fa fa-book w3l-1" aria-hidden="true"></i>	Branch</span>
+					<span class="customtext" id="data"><i class="fa fa-book w3l-1" id="cicon" aria-hidden="true"></i>Branch</span>
 					<ul class="branch">
 					<li><input type="radio" name="branch" value="cse" required="">CSE</li>
 					<li><input type="radio" name="branch" value="ece" required="">ECE</li>
