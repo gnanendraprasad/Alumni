@@ -33,7 +33,16 @@ body {
     animation: animate 6s linear infinite;
 }
 .square:hover span:nth-child(1) {
-    border: none;
+    
+    background:orange;
+    box-shadow: 0 0 10px rgba(255,255,255,1),
+    0 0 20px rgba(255,255,255,1),
+    0 0 30px rgba(255,255,255,1),
+    0 0 0 75px rgba(255,255,255,0.05),
+    0 0 0 60px rgba(255,255,255,0.05),
+    0 0 0 50px rgba(255,255,255,0.05),
+    0 0 0 40px rgba(255,255,255,0.05),
+    0 0 0 30px rgba(255,255,255,0.05);
     border-color: orange;
 
 }
