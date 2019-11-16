@@ -75,13 +75,13 @@ include "../../admin/config/Database.php"
 							<a href="../profile/profile.php" class="nav-link active">Home</a>
 						</li>
 						<li class="nav-item">
+							<a href="../profile/mypage.php" class="nav-link">Profile</a>
+						</li>
+						<li class="nav-item">
 							<a href="../profile/mypost.php" class="nav-link">My Posts</a>
 						</li>
 						<li class="nav-item">
 							<a href="../profile/gallery.php" class="nav-link">Gallery</a>
-						</li>
-						<li class="nav-item">
-							<a href="../profile/about.php" class="nav-link">About</a>
 						</li>
 						<li class="nav-item">
 							<a href="../profile/contact.php" class="nav-link">Contact</a>
