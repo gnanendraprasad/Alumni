@@ -19,7 +19,7 @@ session_start();
 </head>
 <body>
     <div class="card">
-        <div class="front"><img src="../img/testpic.jpg"></div>
+        <div class="front"><img src="../img/profilepic.jpg"></div>
         <div class="back">
             <div class="details">
                 <h2>Name<br><span>Profession</span></h2>
