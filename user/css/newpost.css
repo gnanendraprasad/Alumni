@@ -1,3 +1,10 @@
+body {
+	width: 100%;
+  height: 100%;
+  background: #000;
+  color: #000;
+}
+
 .newpostbutton {
   position: relative;
   padding-top: 150px;
@@ -6,12 +13,18 @@
 
 #cpost {
   list-style: none;
+  padding-left: 100px;
+}
+
+li #cpost {
+  padding bottom: 50px;
 }
 
 .all-posts {
   position: relative;
-  height: 150px;
   width: 50%;
+  padding-top: 50px;
+  padding-left: 100px;
 }
 
 .newline {
@@ -25,7 +38,88 @@
 	width: 100%;
 }
 
-.body {
-	width: 100%;
-	height: 100%;
+/* Glowing gradient button */
+button{
+  position: relative;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  z-index: 1;
+ }
+button:hover
+ {
+  animation: animate 5s linear infinite;
+ }
+ @keyframes animate
+ {
+  0%
+  {
+   background-position: 0%;
+  }
+  100%
+  {
+   background-position: 300%;
+  }
+ }
+button:before
+{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.5s;  
 }
+button:hover:before
+{
+  
+  filter: blur(20px);
+  opacity:1;
+  animation: animate 5s linear infinite;
+}
+
+/* End of Glowing buttons */
+
+/* Text blocks of new post */
+.fields {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  color: #fff;
+}
+.fields #type {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  padding: 5px 10px 5px 10px;
+}
+.fields #desc {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  padding: 5px 10px 5px 10px;
+}
+#deleteb {
+  position: relative;
+}
+
+/* End of Text block */

@@ -15,8 +15,8 @@
       <?php
       $sql="Select * from post order by ptype";
       if ($result = $conn->query($sql)) {
-    /* fetch associative array */
-    while ($row = $result->fetch_assoc()) {
+      /* fetch associative array */
+      while ($row = $result->fetch_assoc()) {
         $fieldid = $row["pid"];
         $field1name = $row["ptype"];
         $field2name = $row["description"];
@@ -28,7 +28,7 @@
         $date = date('d/m/Y h:i:sa', time());
         */
 
-        echo '<div class="fields"><div class="newline">'.$field1name.' '.$field2name.'</div>'
+        echo '<div class="fields"><div class="newline"><p id="type">'.$field1name.'</p><p id="desc">'.$field2name.'</p></div>'
         ?>
 
         <!--- Fetching the current log_id using post method to edit post-->
@@ -38,10 +38,12 @@
         </form>-->
 
         <!--- Fetching the current log_id using post method to delete post-->
+      <div id="deleteb">  
         <form action="deletepost.php" method="post">
         <input type="hidden" name="fieldid" value="<?php echo $fieldid;?>">
         <button type="submit" >Delete</button>
         </form>
+    </div>  
         <?php
         '</div>';
 
