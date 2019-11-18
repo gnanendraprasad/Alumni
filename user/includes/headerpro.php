@@ -13,12 +13,11 @@ include "../../admin/config/Database.php"
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <!-- Bootstrap Min CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- MeanMenu CSS -->
-    <link rel="stylesheet" href="https://techsolutionshere.com/wp-content/themes/techsolution/assets/blog-post-css-js/meanmenu.css">
+    <link rel="stylesheet" href="../css/meanmenu.css">
     <style>
     body{
-      font-family: 'Poppins', sans-serif;
-    }
+		font-family: 'Poppins', sans-serif;
+	}
     </style>
   </head>
 
@@ -67,7 +66,7 @@ include "../../admin/config/Database.php"
 		<div class="container">
 			<nav class="navbar navbar-expand-md navbar-light">
 				<a class="navbar-brand" href="#">
-					Logo
+					Alumni
 				</a>
 				<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
@@ -86,8 +85,7 @@ include "../../admin/config/Database.php"
 						<li class="nav-item">
 							<a href="../profile/contact.php" class="nav-link">Contact</a>
 						</li>
-						<li class="nav-item">
-            <a class="nav-link" href="../includes/signout.php">Logout</a>
+						<li class="nav-item"><a class="nav-link" href="../includes/signout.php">Logout</a>
 						</li>
 						<!-- <li class="nav-item">
 							<a href="#" class="nav-link dropdown-toggle">Pages</a>
@@ -114,6 +112,12 @@ include "../../admin/config/Database.php"
 	jQuery('.mean-menu').meanmenu({
 		meanScreenWidth: "991"
 	});
+
+	//for active class
+	$(document).on('click','ul li', function () {
+		$(this).addClass('active')
+		
+	})
 </script>
   </body>
 </html>

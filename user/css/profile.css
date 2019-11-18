@@ -1,3 +1,8 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
 .newsevents {
 	padding-top: 140px;
 	height: 480px;
@@ -5,6 +10,7 @@
 }
 
 .news-profile {
+	position: relative;
 	display: inline-block;
 	padding-left: 20px;
 	width: 60%;
@@ -12,6 +18,7 @@
 }
 
 .events-profile {
+	position: absolute;
 	display: inline-block;
 	padding-left: 10px;
 	width: 35%;
@@ -31,8 +38,16 @@ h2 {
 	color: white;
 	background-color: black;
 	text-align: center;
+	background-color: rgba(255, 176, 29, 0.575);
+	border-radius: 3px;
 }
 
 .breakline {
 	white-space: pre;
+}
+
+#ele {
+	color: #fff;
+	list-style: square;
+	padding-left: 10px;
 }

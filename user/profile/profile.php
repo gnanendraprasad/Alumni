@@ -41,7 +41,7 @@ require "../includes/config.php";
       while ($row = $result->fetch_assoc()) {
             $field2name = $row["description"];
 
-            echo '<li><div class="breakline">'.$field2name.'</div></li>';
+            echo '<li id="ele">'.$field2name.'<div class="breakline"></div></li>';
             }
 
           /* free result set */
@@ -62,7 +62,7 @@ require "../includes/config.php";
             
             $field2name = $row["description"];
 
-            echo '<li><div class="breakline">'.$field2name.'</div></li>';
+            echo '<li id="ele">'.$field2name.'<div class="breakline"></div></li>';
             }
 
           /* free result set */
@@ -83,7 +83,7 @@ require "../includes/config.php";
       while ($row = $result->fetch_assoc()) {
             $field2name = $row["description"];
 
-            echo '<li><div class="breakline">'.$field2name.'</div></li>';
+            echo '<li id="ele">'.$field2name.'</li><div class="breakline"></div>';
             } 
 
           /* free result set */
