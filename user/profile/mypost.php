@@ -5,13 +5,12 @@
 ?>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../css/newpost.css">
+    <link rel="stylesheet" type="text/css" href="../css/mypost.css">
   </head>
   <body>
     <div class="newpostbutton">
       <li id="cpost"><a href="newpost.php"><button>Create New Post</button></a>
     </div>
-    <div class="all-posts">
       <?php
       $sql="Select * from post order by ptype";
       if ($result = $conn->query($sql)) {
@@ -28,35 +27,27 @@
         $date = date('d/m/Y h:i:sa', time());
         */
 
-        echo '<div class="fields"><div class="newline"><p id="type">'.$field1name.'</p><p id="desc">'.$field2name.'</p></div>'
-        ?>
-
+        echo '<div class="all-posts">
+        <div class="fields"><p id="type">'.$field1name.'</p><p id="desc">'.$field2name.'
+        </p></div>
         <!--- Fetching the current log_id using post method to edit post-->
         <!--<form action="editpost.php" method="post">
-        <input type="hidden" name="fieldid" value="<?php echo $fieldid;?>">
+        <input type="hidden" name="fieldid" value="<?php //echo $fieldid;?>">
         <button type="submit" name="edit-submit" >Edit</button>
         </form>-->
 
         <!--- Fetching the current log_id using post method to delete post-->
-      <div id="deleteb">  
-        <form action="deletepost.php" method="post">
-        <input type="hidden" name="fieldid" value="<?php echo $fieldid;?>">
+        <form id="deleteb" action="deletepost.php" method="post">
+        <input type="hidden" name="fieldid" value="'.$fieldid.'">
         <button type="submit" >Delete</button>
         </form>
-    </div>  
-        <?php
-        '</div>';
-
-    }
-
-
+      </div>
+    </>';
+      }   
     /* free result set */
     $result->free();
-   }
+    }
   ?>
-    </div>
-
-
     <script type="text/javascript" src="../js/createpost.js"></script> <!-- Need to create alert, check the file by path and add function to alert -->
   </body>
 </html>

@@ -1,37 +1,31 @@
 <?php
 session_start();
-echo "Please fill the form";
-
- ?>
+?>
 
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" src="#">
+    <link rel="stylesheet" type="text/css" href="../css/newpost.css">
   </head>
   <body>
-      <div>
+      <h1>Create New Post</h1>
+      <hr />
+      <div class="newpost">
         <form id="new-post" action="../includes/mynewpost.php" method="POST">
+          <div id="select">
           <text>Select the type</text>
           <select name="postbox">
               <option value="NEWS" name="posttype">NEWS</option>
               <option value="EVENT" name="posttype">EVENT</option>
               <option value="JOB" name="posttype">JOB</option>
             </select>
-            Description <input type="text-area" name="description">
-            <input type="submit" name="post-submit">
-        </form>
+            </div>  
+            <div id="description">
+            Description <input id="desc" type="text-area" name="description">
+            </div>
+            <div id="submit">
+            <button type="submit" name="post-submit">Submit</button></div>
+            </form>
       </div>
   </body>
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
