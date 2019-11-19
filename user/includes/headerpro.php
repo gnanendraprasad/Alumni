@@ -71,7 +71,7 @@ include "../../admin/config/Database.php"
 				<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a href="../profile/profile.php" class="nav-link active">Home</a>
+							<a href="../profile/profile.php" class="nav-link">Home</a>
 						</li>
 						<li class="nav-item">
 							<a href="../profile/mypage.php" class="nav-link">Profile</a>
@@ -104,7 +104,7 @@ include "../../admin/config/Database.php"
 </div>
 <!-- End Navbar Area -->
 	<!-- JQuery Min JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!-- MeanMenu JS -->
 <script src="https://techsolutionshere.com/wp-content/themes/techsolution/assets/blog-post-css-js/jquery.meanmenu.js"></script>
 <script>
@@ -112,12 +112,6 @@ include "../../admin/config/Database.php"
 	jQuery('.mean-menu').meanmenu({
 		meanScreenWidth: "991"
 	});
-
-	//for active class
-	$(document).on('click','ul li', function () {
-		$(this).addClass('active')
-		
-	})
 </script>
-  </body>
+</body>
 </html>

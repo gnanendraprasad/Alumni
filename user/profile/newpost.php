@@ -5,6 +5,7 @@ include "../includes/footerpro.php";
 
 <html>
   <head>
+    <title>Create New Post</title>
     <link rel="stylesheet" type="text/css" href="../css/newpost.css">
   </head>
   <body>

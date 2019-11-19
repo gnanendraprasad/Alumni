@@ -6,6 +6,7 @@
 ?>
 <html>
   <head>
+    <title>My Posts</title>
     <link rel="stylesheet" type="text/css" href="../css/mypost.css">
   </head>
   <body>
