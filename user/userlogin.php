@@ -1,5 +1,8 @@
 <?php
 
+include "includes/footerlog.php";
+include "includes/headerlog.php";
+
 if (isset($_GET['error'])) {
 	if ($_GET['error']=='emptyfields') {
 		echo '<script>alert("Fill all the details")</script>';
