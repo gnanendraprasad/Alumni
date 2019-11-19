@@ -1,6 +1,7 @@
 <?php
 session_start();
-    include "../includes/headerpro.php"
+    include "../includes/headerpro.php";
+    include "../includes/footerpro.php";
 ?>
 <!DOCTYPE html>
 <html>

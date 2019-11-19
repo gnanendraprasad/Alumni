@@ -1,5 +1,6 @@
 <?php
 require "../includes/config.php";
+include "../includes/footerpro.php";
 session_start();
 
 $fieldid=$_POST["fieldid"];

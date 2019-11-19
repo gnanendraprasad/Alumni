@@ -2,6 +2,7 @@
 session_start();
 require "../includes/config.php";
   include "../includes/headerpro.php";
+  include "../includes/footerpro.php";
 ?>
     <html>
     <head>
