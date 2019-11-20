@@ -18,7 +18,7 @@ if($row["total"] > 0){
 	$roww = mysqli_fetch_array($sqll);
 	if($roww["flag"]=='1'){
 	$_SESSION["log_id"]=$roww["log_id"];
-  header("location: ../profile/profile.php?id=".$roww["log_id"]."");
+  header("location: ../profile/mypage.php?id=".$roww["log_id"]."");
 }
 elseif ($roww["flag"]=='0') {
 	$sql="select user_usn from users where user_usn=? or user_email=?";
