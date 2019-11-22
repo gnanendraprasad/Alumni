@@ -173,57 +173,57 @@
 						<!-- Our Team starts -->
 				
 						<!-- Heading -->
-						<div class="block-heading-six">
+						<!-- <div class="block-heading-six">
 							<h4 class="bg-color">Our Team</h4>
 						</div>
-						<br>
+						<br> -->
 						
 						<!-- Our team starts -->
 						
-						<div class="team-six">
+						<!-- <div class="team-six">
 							<div class="row">
 								<div class="col-md-3 col-sm-6">
-									<!-- Team Member -->
+									
 									<div class="team-member">
-										<!-- Image -->
+										
 										<img class="img-responsive" src="img/team1.jpg" alt="">
-										<!-- Name -->
+										
 										<h4>Johne Doe</h4>
 										<span class="deg">Founder</span> 
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6">
-									<!-- Team Member -->
+									
 									<div class="team-member">
-										<!-- Image -->
+										
 										<img class="img-responsive" src="img/team2.jpg" alt="">
-										<!-- Name -->
+										
 										<h4>Jennifer</h4>
 										<span class="deg">Alumni Association Head</span> 
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6">
-									<!-- Team Member -->
+									
 									<div class="team-member">
-										<!-- Image -->
+										
 										<img class="img-responsive" src="img/team3.jpg" alt="">
-										<!-- Name -->
+										
 										<h4>Christean</h4>
 										<span class="deg">Alumni Coordinator</span> 
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6">
-									<!-- Team Member -->
+									
 									<div class="team-member">
-										<!-- Image -->
+										
 										<img class="img-responsive" src="img/team4.jpg" alt="">
-										<!-- Name -->
+										
 										<h4>Kerinele rase</h4>
 										<span class="deg">Alumni Coordinator</span> 
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						
 						<!-- Our team ends -->
 					  
