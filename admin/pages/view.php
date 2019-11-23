@@ -16,6 +16,11 @@ if (! (isset ( $_SESSION ['login'] ))) {
 
 		  $obj->del_std(intval($_GET['del']));
     }
+		if(isset($_GET['did']))
+			{
+
+				$obj->del_std1(intval($_GET['did']));
+			}
 
 ?>
 
@@ -114,7 +119,8 @@ if (! (isset ( $_SESSION ['login'] ))) {
       <td><!--&nbsp;&nbsp;<a href="edit-std.php?id=<?php echo htmlentities($res->user_usn);?>">
 	  <p class="fa fa-edit"></p></a> &nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;
       <a href="view.php?del=<?php echo htmlentities($res->user_id); ?>">
-	  <p class="fa fa-times-circle"></p>
+	  <p class="fa fa-check-circle-o"></p></a>&nbsp;&nbsp;<a href="view.php?did=<?php echo htmlentities($res->user_id);?>">
+	<p class="fa fa-times-circle"></p></a> &nbsp;
 
 
 	  </td>

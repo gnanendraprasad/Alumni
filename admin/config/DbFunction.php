@@ -137,6 +137,18 @@ function del_std($id){
     echo "<script>window.location.href='view.php'</script>";
 
 }
+function del_std1($id){
+
+    $db = Database::getInstance();
+    $mysqli = $db->getConnection();
+    $query="update users set flag2=NULL where user_id=?";
+    $stmt= $mysqli->prepare($query);
+    $stmt->bind_param('s',$id);
+	  $stmt->execute();
+    echo "<script>alert('Rejected')</script>";
+    echo "<script>window.location.href='view.php'</script>";
+
+}
 function del_subject($id){
 
 		//echo $id;exit;
