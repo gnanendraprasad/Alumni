@@ -138,7 +138,7 @@
                 <div class="row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <!--- Fetching the current log_id using post method to edit post-->
-                    <form id="edit" action="includes/editpost.php" method="post">
+                    <form id="edit" action="editpost.php" method="post">
                     <input type="hidden" name="fieldid" value="'.$fieldid.'">
                     <button class="btn btn-primary" type="submit" name="edit-submit" >Edit</button>
                     </form>
@@ -193,7 +193,7 @@
                 <div class="row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <!--- Fetching the current log_id using post method to edit post-->
-                    <form id="edit" action="includes/editpost.php" method="post">
+                    <form id="edit" action="editpost.php" method="post">
                     <input type="hidden" name="fieldid" value="'.$fieldid.'">
                     <button class="btn btn-primary" type="submit" name="edit-submit" >Edit</button>
                     </form>
@@ -248,7 +248,7 @@
                 <div class="row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <!--- Fetching the current log_id using post method to edit post-->
-                    <form id="edit" action="includes/editpost.php" method="post">
+                    <form id="edit" action="editpost.php" method="post">
                     <input type="hidden" name="fieldid" value="'.$fieldid.'">
                     <button class="btn btn-primary" type="submit" name="edit-submit" >Edit</button>
                     </form>

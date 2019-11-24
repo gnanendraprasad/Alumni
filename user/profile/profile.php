@@ -74,10 +74,10 @@ if ($result = $conn->query($sql)) {
                                     <!-- <p class="proile-rating">RANKINGS : <span>8/10</span></p> -->
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Basic Info</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Detailed Info</a>
                                 </li>
                             </ul>
                         </div>
@@ -160,18 +160,18 @@ if ($result = $conn->query($sql)) {
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Experience</label>
+                                                <label>Qualification</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Expert</p>
+                                                <p>BE</p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Hourly Rate</label>
+                                                <label>CGPA</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>10$/hr</p>
+                                                <p>6.5</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -179,23 +179,23 @@ if ($result = $conn->query($sql)) {
                                                 <label>Total Projects</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>230</p>
+                                                <p>5</p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>English Level</label>
+                                                <label>Github Link</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Expert</p>
+                                                <p><a href="#">Add</a></p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Availability</label>
+                                                <label>Linked In Link</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>6 months</p>
+                                                <p><a href="#">Add</a></p>
                                             </div>
                                         </div>
                                 <div class="row">
