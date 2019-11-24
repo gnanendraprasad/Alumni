@@ -1,6 +1,8 @@
 <?php
 session_start ();
 
+$conn = mysqli_connect("localhost","root","","alumni");
+
 if (! (isset ( $_SESSION ['login'] ))) {
 
 	header ( 'location:../index.php' );
@@ -72,6 +74,7 @@ if (! (isset ( $_SESSION ['login'] ))) {
 										                      <th>USN</th>
 									                       	<th>Name</th>
 																					<th>Email</th>
+
 																					<th>Action</th>
 																			</tr>
 																	</thead>
@@ -91,9 +94,21 @@ if (! (isset ( $_SESSION ['login'] ))) {
 														<td><?php echo htmlentities( strtoupper($res->usn));?></td>
 					 <td><?php echo htmlentities(strtoupper($res->name));?></td>
 		 <td><?php echo htmlentities(strtoupper($res->email));?></td>
+		<!-- <td><?php
+		 $x = $res->usn;
+		 $query = "select user_usn from users where user_usn = ".$x."";
+		 $result = mysqli_query($conn, $query);
+		 if($result){
+			  echo "User Exists";
+		 }
+		 else{
+			  echo "User Not Exists";
+		 }
+	  ?>
+	</td>-->
 		<td>&nbsp;&nbsp;
 		<a href="session.php?del=<?php echo htmlentities($res->usn); ?>">
-	<p class="fa fa-times-circle"></p>
+	<p class="fa fa-check-circle-o"></p>
 
 	</td>
 
