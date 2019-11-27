@@ -6,14 +6,13 @@
 .postwrap {
     display:grid;
     grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     grid-gap: 1em;
     }
 }
 .postwrap > div {
-    background:#eee;
-    padding: 1em;
-    border: 1px orange solid;
+    background:#fff;
+    border: 1px #F4783B solid;
     border-radius: 3px;
     grid-auto-rows: minmax(200px, auto);
 }
@@ -26,3 +25,37 @@
 .postwrap .j {
     grid-row: 1/5;
 }
+.postwrap .header-posts {
+    background: #F4783B;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+.postwrap .content-posts {
+    /* padding: 10px; */
+}
+
+/* Animate posts in slider */
+.content-posts .slider{
+    padding: 5px;
+}
+.slider div {
+    color: black;
+    margin-bottom: 15px;
+    padding: 2px 15px;
+    text-align: center;  
+}
+.content-posts .slider .slider-text1 {
+    position: relative;
+    animation: slide 5s linear infinite;
+}
+@keyframes slide {
+    0% {margin-top: 0px;}
+    25% {margin-top: 10px;}
+    50% {margin-top: 20px;}
+    75% {margin-top: 30px;}
+    100% {margin-top: 40px;}
+    0% {margin-top: 0px;}
+}
+/* End of Animate posts in slider */

@@ -56,7 +56,7 @@
 			<div class="row">
 				<div class="col-md-10 col-sm-9">
 					<h3>Welcome to Alumni Association</h3>
-					<p>More description about alumni association with respec to dedicated institute, customized.</p>
+					<p>More description about alumni association with respect to dedicated institute, customized.</p>
 				</div>
 				<div class="col-md-2 col-sm-3">
 					<a href="#" class="btn btn-primary">Learn More</a>
@@ -66,13 +66,9 @@
 	</section>
 
 	<!-- Posts Grid Start -->
-	<section id="posts">
-	<div class="postwrap">
-		<div class="n">News</div>
-		<div class="ue">Upcoming Events</div>
-		<div class="j">Jobs</div>
-	</div>
-	</section>
+	<?php
+	include "includes/myposts.php"
+	?>
 	<!-- End of Posts Grid -->
 
 

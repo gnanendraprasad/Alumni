@@ -24,7 +24,7 @@ if($row["total"] > 0){
 	$_SESSION["log_id"] = $roww["log_id"];
 	?>
 	<script>
-		window.location.assign("../profile/profile.php");
+		window.location.assign("../profile/mypage.php");
 		alert('Login successful');
 	</script>
 	<?php
