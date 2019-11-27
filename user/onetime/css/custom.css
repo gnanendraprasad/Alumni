@@ -1,0 +1,56 @@
+.w3l-branch, .w3l-batch, .w31-dob {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+	border: none;
+	display: inline-block;
+	width: 90%;
+    margin: 0 0 10px 0;
+    outline: none;
+	border-bottom: 1px solid #fff; 
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+.branch {
+    position: relative;
+    margin: 5px 50% 5px 5px;
+    padding-left:15px ;
+    padding-bottom: 15px;
+    float: left;
+}
+.dob {
+    position: relative;
+    margin: 5px 50% 5px 5px;
+    padding-left:15px ;
+    float: left;
+}
+
+li {
+    float:left;
+}
+.gender {
+
+    position: relative;
+    position: relative;
+    margin: 5px 50% 5px 5px;
+    padding-left:15px ;
+    padding-bottom: 15px;
+    float: left;
+}
+
+#cicon {
+    position: relative;
+    padding-left: 5px;
+    float: left;
+}
+
+.customtext {
+    position: relative;
+    padding-bottom: 0.5em;
+}
+
+.empty {
+    position: relative;
+    padding-bottom: 1em;
+}
