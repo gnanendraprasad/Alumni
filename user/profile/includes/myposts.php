@@ -2,9 +2,13 @@
 
 
 <link href="css/post.css" rel="stylesheet" />
+<link href="css/font-awesome.css" rel="stylesheet"/>
 
 <section id="posts">
 	<div class="postwrap">
+
+
+<!-- News post starts -->
 		<div class="n">
             <div class="header-posts">News</div>
                 <div class="post-contain">
@@ -147,18 +151,40 @@
                 </div>
                 </div>
             <div class="content-posts"></div>
-		</div>
+        </div>
+        
+<!-- News post ends -->
+
+<!-- Upcoming events starts -->
 		<div class="ue">
-			<div class="header-posts">Upcoming Events</div>
+            <div class="header-posts">Upcoming Events</div>
 			<div class="content-posts"></div>
-		</div>
+        </div>
+        
+<!-- Upcoming events ends -->
+
+
+<!-- Job posts starts -->
 		<div class="j">
-			<div class="header-posts">Jobs</div>
+            <div class="header-posts">Jobs</div>
+            <div class="job-posts">
+                <div class="job-icon">
+                <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="job-info">
+                    <div class="job-desc">
+                        <p>Job Description - Prior to posting a job, be thoughtful about the company profile and job description to ensure the posting speaks to the values, mission and culture of the company.</p>
+                    </div>
+                    <div class="job-apply">
+                        <input type="button" class="btn btn-primary pull-left" value="Apply Now"/>
+                    </div>
+                </div>
+			</div>
 			<div class="content-posts"></div>
 		</div>
 	</div>
     </section>
-
+<!-- Job posts ends -->
 
 <script>
     $(document).ready(function () {
