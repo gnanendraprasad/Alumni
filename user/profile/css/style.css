@@ -452,7 +452,7 @@ section.hero-text h1{
 #content {
 	position:relative;
 	background:#fff;
-	padding:50px 0 0px 0;
+	padding:20px 0 20px 0;
 }
 
 #content img {
@@ -1791,6 +1791,9 @@ padding-top: 3px;
     opacity: 0;
     right: 0;
     top: 0;
+}
+.profile-head {
+	padding-top: 17%;
 }
 .profile-head h5{
     color: #333;
