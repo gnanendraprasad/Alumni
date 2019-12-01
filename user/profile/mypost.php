@@ -10,14 +10,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" />
 <meta name="author" content="http://webthemez.com" />
- 
+
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="css/jcarousel.css" rel="stylesheet" />
 <link href="css/flexslider.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
- 
+
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,8 +26,8 @@
 </head>
 <body>
 <div id="wrapper">
-	<?php 
-	include "includes/headerpro.php"; 
+	<?php
+	include "includes/headerpro.php";
 	?>
 	<section id="inner-headline">
 	<div class="container">
@@ -39,19 +39,19 @@
 	</div>
 	</section>
 	<section id="content">
-		<div class="container content">		
+		<div class="container content">
         <!-- Service Blcoks -->
-			
-						<div class="row"> 
+
+						<div class="row">
 							<div class="col-md-12">
 								<div class="about-logo">
                                     <h3>Post <span class="color">to Alumni</span></h3>
                                     <p></P>
 								</div>
-								<a href="newpost.php" class="btn btn-primary pull-left">Create Post</a>  
+								<a href="newpost.php" class="btn btn-primary pull-left">Create Post</a>
 							</div>
 						</div>
-						 
+
 						    <!-- Info Blcoks -->
         <div class="row">
             <div class="col-sm-4 info-blocks">
@@ -78,7 +78,7 @@
         </div>
         <!-- End Info Blcoks -->
 
-       
+
         <!-- Info Blcoks -->
         <!-- <div class="row">
             <div class="col-sm-4 info-blocks">
@@ -109,12 +109,12 @@
 
         <div class="row service-v1 margin-bottom-40">
             <div class="col-md-4 md-margin-bottom-40">
-               <img class="img-responsive" src="img/service1.jpg" alt="">   
+               <!--<img class="img-responsive" src="img/service1.jpg" alt="">
                 <h3>Events Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>-->
                 <div class="row-md-4">
                 <?php
-                $sql="Select * from post order by ptype";
+                $sql="Select * from post where user_id='".$_SESSION["log_id"]."' order by ptype";
                 if ($result = $conn->query($sql)) {
                 /* fetch associative array */
                 while ($row = $result->fetch_assoc()) {
@@ -140,7 +140,7 @@
                     <!--- Fetching the current log_id using post method to edit post-->
                     <form id="edit" action="includes/editpost.php" method="post">
                     <input type="hidden" name="fieldid" value="'.$fieldid.'">
-                    <button class="btn btn-primary" type="submit" name="edit-submit" >Edit</button>
+
                     </form>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -153,23 +153,23 @@
                     </div>
                 </div>
                 </div>';
-                    } 
+                    }
                 }
                 /* free result set */
             $result->free();
             }
-            ?>     
-            </div>   
+            ?>
+            </div>
             </div>
 
 
             <div class="col-md-4">
-                <img class="img-responsive" src="img/service2.jpg" alt="">            
+                <!--<img class="img-responsive" src="img/service2.jpg" alt="">
                 <h3>Jobs Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>        
-                <div class="row-md-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
+              --><div class="row-md-4">
                 <?php
-                $sql="Select * from post order by ptype";
+                $sql="Select * from post where user_id='".$_SESSION["log_id"]."' order by ptype";
                 if ($result = $conn->query($sql)) {
                 /* fetch associative array */
                 while ($row = $result->fetch_assoc()) {
@@ -195,7 +195,7 @@
                     <!--- Fetching the current log_id using post method to edit post-->
                     <form id="edit" action="includes/editpost.php" method="post">
                     <input type="hidden" name="fieldid" value="'.$fieldid.'">
-                    <button class="btn btn-primary" type="submit" name="edit-submit" >Edit</button>
+
                     </form>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -208,23 +208,23 @@
                     </div>
                 </div>
                 </div>';
-                    } 
+                    }
                 }
                 /* free result set */
             $result->free();
             }
-            ?>     
-            </div> 
+            ?>
+            </div>
             </div>
 
 
             <div class="col-md-4 md-margin-bottom-40">
-              <img class="img-responsive" src="img/service3.jpg" alt="">  
+            <!--  <img class="img-responsive" src="img/service3.jpg" alt="">
                 <h3>News Title</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
-                <div class="row-md-4">
+              --><div class="row-md-4">
                 <?php
-                $sql="Select * from post order by ptype";
+                $sql="Select * from post where user_id='".$_SESSION["log_id"]."' order by ptype";
                 if ($result = $conn->query($sql)) {
                 /* fetch associative array */
                 while ($row = $result->fetch_assoc()) {
@@ -250,7 +250,7 @@
                     <!--- Fetching the current log_id using post method to edit post-->
                     <form id="edit" action="includes/editpost.php" method="post">
                     <input type="hidden" name="fieldid" value="'.$fieldid.'">
-                    <button class="btn btn-primary" type="submit" name="edit-submit" >Edit</button>
+
                     </form>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -262,20 +262,20 @@
                     </div>
                 </div>
                 </div>';
-                    } 
+                    }
                 }
                 /* free result set */
             $result->free();
             }
-            ?>     
-            </div> 
+            ?>
+            </div>
             </div>
         </div>
         <!-- End Service Blcoks -->
- 
-     
 
-        
+
+
+
     </div>
     </section>
 	<?php
@@ -290,7 +290,7 @@
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
+<script src="js/jquery.fancybox-media.js"></script>
 <script src="js/portfolio/jquery.quicksand.js"></script>
 <script src="js/portfolio/setting.js"></script>
 <script src="js/jquery.flexslider.js"></script>
