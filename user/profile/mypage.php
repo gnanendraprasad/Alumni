@@ -1,3 +1,5 @@
+<?php session_start();
+require "includes/config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +35,10 @@
               <li>
                 <img src="img/slides/1.jpg" alt="" />
                 <div class="flex-caption">
-                    <h3>Hello Alumni_Name</h3>
+                    <h3>Hello <?php $sql = "select * from users where user_usn='".$_SESSION["log_id"]."'";
+										$result = mysqli_query($conn,$sql);
+										$row = mysqli_fetch_assoc($result);
+										echo $row["name"]; ?></h3>
 					<p>You are one of the precious elements of the community.</p>
 
                 </div>
