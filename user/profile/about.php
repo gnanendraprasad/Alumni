@@ -12,7 +12,7 @@
 <link href="css/jcarousel.css" rel="stylesheet" />
 <link href="css/flexslider.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
- 
+
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,8 +21,8 @@
 </head>
 <body>
 <div id="wrapper">
-	<?php 
-	include "includes/headerpro.php"; 
+	<?php
+	include "includes/headerpro.php";
 	?>
 	<section id="inner-headline">
 	<div class="container">
@@ -51,10 +51,10 @@
 		</div>
 	</section>
 	<div class="container">
-					
+
 					<div class="about">
-				
-						
+
+
 						<div class="row">
 							<div class="col-md-4">
 								<!-- Heading and para -->
@@ -64,16 +64,16 @@
 								<p>Perks of joining the association and how one can be benefitted by it. why we all should stay connected!!</p>
 								<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo..</p>
 							</div>
-							<div class="col-md-4">
+							<!--<div class="col-md-4">
 								<div class="block-heading-two">
 									<h3><span>Perks</span></h3>
-								</div>		
+								</div>
 								<!-- Accordion starts -->
-								<div class="panel-group" id="accordion-alt3">
+								<!--<div class="panel-group" id="accordion-alt3">
 								 <!-- Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. -->
-								  <div class="panel">	
+								  <!--<div class="panel">
 									<!-- Panel heading -->
-									 <div class="panel-heading">
+									<!-- <div class="panel-heading">
 										<h4 class="panel-title">
 										  <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseOne-alt3">
 											<i class="fa fa-angle-right"></i> According to Perk  # 1
@@ -82,7 +82,7 @@
 									 </div>
 									 <div id="collapseOne-alt3" class="panel-collapse collapse">
 										<!-- Panel body -->
-										<div class="panel-body">
+										<!--<div class="panel-body">
 										  Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
 										</div>
 									 </div>
@@ -131,13 +131,13 @@
 								  </div>
 								</div>
 								<!-- Accordion ends -->
-								
-							</div>
-							
+
+							<!-- </div>-->
+
 							<div class="col-md-4">
 								<div class="block-heading-two">
 									<h3><span> Our Alumni</span></h3>
-								</div>								
+								</div>
 								<h6>Jobs</h6>
 								<div class="progress pb-sm">
 								  <!-- White color (progress-bar-white) -->
@@ -164,72 +164,72 @@
 								  </div>
 								</div>
 							</div>
-							
+
 						</div>
-						
-						 						
-						 
+
+
+
 						<br>
 						<!-- Our Team starts -->
-				
+
 						<!-- Heading -->
 						<!-- <div class="block-heading-six">
 							<h4 class="bg-color">Our Team</h4>
 						</div>
 						<br> -->
-						
+
 						<!-- Our team starts -->
-						
+
 						<!-- <div class="team-six">
 							<div class="row">
 								<div class="col-md-3 col-sm-6">
-									
+
 									<div class="team-member">
-										
+
 										<img class="img-responsive" src="img/team1.jpg" alt="">
-										
+
 										<h4>Johne Doe</h4>
-										<span class="deg">Founder</span> 
+										<span class="deg">Founder</span>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6">
-									
+
 									<div class="team-member">
-										
+
 										<img class="img-responsive" src="img/team2.jpg" alt="">
-										
+
 										<h4>Jennifer</h4>
-										<span class="deg">Alumni Association Head</span> 
+										<span class="deg">Alumni Association Head</span>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6">
-									
+
 									<div class="team-member">
-										
+
 										<img class="img-responsive" src="img/team3.jpg" alt="">
-										
+
 										<h4>Christean</h4>
-										<span class="deg">Alumni Coordinator</span> 
+										<span class="deg">Alumni Coordinator</span>
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-6">
-									
+
 									<div class="team-member">
-										
+
 										<img class="img-responsive" src="img/team4.jpg" alt="">
-										
+
 										<h4>Kerinele rase</h4>
-										<span class="deg">Alumni Coordinator</span> 
+										<span class="deg">Alumni Coordinator</span>
 									</div>
 								</div>
 							</div>
 						</div> -->
-						
+
 						<!-- Our team ends -->
-					  
-						
+
+
 					</div>
-									
+
 				</div>
 	</section>
 	<?php
@@ -244,7 +244,7 @@
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
+<script src="js/jquery.fancybox-media.js"></script>
 <script src="js/portfolio/jquery.quicksand.js"></script>
 <script src="js/portfolio/setting.js"></script>
 <script src="js/jquery.flexslider.js"></script>

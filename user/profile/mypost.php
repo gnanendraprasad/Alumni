@@ -18,10 +18,7 @@
 <link href="css/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
 
 </head>
 <body>
@@ -79,31 +76,7 @@
         <!-- End Info Blcoks -->
 
 
-        <!-- Info Blcoks -->
-        <!-- <div class="row">
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-code"></i>
-                <div class="info-blocks-in">
-                    <h3>SEO Ready</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-compress"></i>
-                <div class="info-blocks-in">
-                    <h3>Fully Responsive</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-html5"></i>
-                <div class="info-blocks-in">
-                    <h3>CSS3 + HTML5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
-                </div>
-            </div>
-        </div> -->
-        <!-- End Info Blcoks -->
+
 
 
 
@@ -164,10 +137,7 @@
 
 
             <div class="col-md-4">
-                <!--<img class="img-responsive" src="img/service2.jpg" alt="">
-                <h3>Jobs Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
-              --><div class="row-md-4">
+                <div class="row-md-4">
                 <?php
                 $sql="Select * from post where user_id='".$_SESSION["log_id"]."' order by ptype";
                 if ($result = $conn->query($sql)) {
@@ -219,10 +189,7 @@
 
 
             <div class="col-md-4 md-margin-bottom-40">
-            <!--  <img class="img-responsive" src="img/service3.jpg" alt="">
-                <h3>News Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
-              --><div class="row-md-4">
+            <div class="row-md-4">
                 <?php
                 $sql="Select * from post where user_id='".$_SESSION["log_id"]."' order by ptype";
                 if ($result = $conn->query($sql)) {
