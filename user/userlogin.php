@@ -77,7 +77,7 @@ if (isset($_GET['signup'])) {
 	<input type="text" name="email" placeholder="USN">
 	<input type="password" name="password" placeholder="Password">
 	<a href="#">Forgot Your Password</a>
-	<button>Sign In</button>
+	<button name="signin-submit">Sign In</button>
 	</form>
 </div>
 <div class="overlay-container">

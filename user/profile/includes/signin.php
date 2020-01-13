@@ -1,4 +1,4 @@
-<?php
+ <?php
 session_start();
 
 include "config.php";
@@ -8,13 +8,13 @@ $password = $_POST["password"];
 $hash_password = password_hash($password, PASSWORD_DEFAULT);
 
 
-$sql = mysqli_query($conn, "SELECT count(*) as total from login WHERE log_id='".$email."' or log_email='".$email."' and
+$sql = mysqli_query($conn, "SELECT count(*) as total from login WHERE log_id='".$email."' and
 	log_pwd = '".$hash_password."' ");
 
 $row = mysqli_fetch_array($sql);
 
-if($row["total"] > 0){
-	$sqll = mysqli_query($conn, "SELECT * from login where log_id = '".$email."'  or log_email='".$email."'");
+if($row["total"] > 0 && $hash_password == $row["log_pwd"]){
+	$sqll = mysqli_query($conn, "SELECT * from login where log_id = '".$email."' ");
 	$roww = mysqli_fetch_array($sqll);
 	if($roww["flag"]=='1'){
 	$_SESSION["log_id"]=$roww["log_id"];

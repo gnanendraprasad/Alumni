@@ -5,19 +5,21 @@ include "config.php";
 
 $email = strtolower($_POST["email"]);
 $password = $_POST["password"];
-$hash = password_hash($password, PASSWORD_DEFAULT);
+//$hash = password_hash($password, PASSWORD_DEFAULT);
+
+if(isset($_POST["signin-submit"])){
 
 if (empty($email) || empty($password)) {
 	header("Location: ../userlogin.php?error=emptyfields&uid=.$name.&mail=.$email");
 	exit();
 }
 else{
-$sql = mysqli_query($conn, "SELECT count(*) as total from login WHERE log_id='".$email."' or log_email='".$email."' and
-	log_pwd = '".$hash."'");
-
+$sql = mysqli_query($conn, "SELECT count(*) as total from login WHERE log_id='".$email."' and log_pwd = '".$password."'");
 $row = mysqli_fetch_array($sql);
+$sql2 = mysqli_query($conn, "SELECT * from login WHERE log_id='".$email."' ");
+$row2 = mysqli_fetch_array($sql2);
 
-if($row["total"] > 0){
+if($row["total"]>0){
 	$sqll = mysqli_query($conn, "SELECT * from login where log_id = '".$email."'  or log_email='".$email."'");
 	$roww = mysqli_fetch_array($sqll);
 	if($roww["flag"]=='1'){
@@ -51,6 +53,14 @@ elseif ($roww["flag"]=='0') {
 		}
 }
 }
+elseif($row2["log_pwd"]!=$password){
+	?>
+	<script>
+	window.location.assign("../userlogin.php");
+		alert('Incorrect password');
+	</script>
+	<?php
+}
 else{
 	?>
 	<script>
@@ -59,5 +69,11 @@ else{
 	</script>
 	<?php
 }
+}/*
+*/
+}
+
+else{
+	header("Location: ../userlogin.php?error=sqlerror");
 }
 ?>

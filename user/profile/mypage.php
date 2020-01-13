@@ -1,4 +1,6 @@
-<?php session_start();
+<?php
+session_start();
+if(isset($_SESSION["log_id"])){
 require "includes/config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -177,6 +179,10 @@ require "includes/config.php"; ?>
     </section> -->
 	<?php
 	include "includes/footerpro.php";
+}
+else{
+	header("location:../userlogin.php");
+}
 	?>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
