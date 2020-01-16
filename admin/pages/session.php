@@ -14,8 +14,7 @@ if (! (isset ( $_SESSION ['login'] ))) {
 
 	if(isset($_GET['del']))
     {
-
-		  $obj->del_subject($_GET['del']);
+		$obj->del_subject($_GET['del']);
     }
 ?>
 

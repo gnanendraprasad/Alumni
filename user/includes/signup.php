@@ -59,27 +59,26 @@ else{
 			else{
 				$sql="insert into unreg(name,email,usn) values(?,?,?)";
 				$stmt=mysqli_stmt_init($conn);
-				if(!mysqli_stmt_prepare($stmt,$sql)){
+				if(!mysqli_stmt_prepare($stmt,$sql)) {
 					header("Location: ../userlogin.php?error=sqlerror");
 					exit();
 				}
-				else{
-
+				else {
 					mysqli_stmt_bind_param($stmt,"sss",$name,$email,$password);
 					mysqli_stmt_execute($stmt);
 					header("Location: ../userlogin.php?signup=success");
 					exit();
+				}
 			}
-			}
+		}
 	}
-
-}
-}
+	}
 }
 mysqli_stmt_close($stmt);
 mysqli_close($conn);
 }
 else{
-  header("Location: ../userlogin.php");
-  exit();
+	header("Location: ../userlogin.php");
+	exit();
 }
+?>

@@ -154,10 +154,10 @@ function del_subject($id){
 		//echo $id;exit;
 	 $db = Database::getInstance();
 	 $mysqli = $db->getConnection();
-	 //$hash_id=password_hash($id, PASSWORD_DEFAULT);
+	 $hash_id=password_hash($id, PASSWORD_DEFAULT);
 	 $query="insert into login(log_id,log_pwd) values(?,?)";
 	 $stmt= $mysqli->prepare($query);
-	 $stmt->bind_param('ss',$id,$id);
+	 $stmt->bind_param('ss',$id,$hash_id);
    $stmt->execute();
 	 echo "<script>alert('User has been added.')</script>";
 	// echo "<script>window.location.href='view-course.php'</script>";

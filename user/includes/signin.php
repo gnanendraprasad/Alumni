@@ -5,8 +5,6 @@ include "config.php";
 
 $email = strtolower($_POST["email"]);
 $password = $_POST["password"];
-//$hash = password_hash($password, PASSWORD_DEFAULT);
-
 if(isset($_POST["signin-submit"])){
 
 if (empty($email) || empty($password)) {
@@ -14,12 +12,14 @@ if (empty($email) || empty($password)) {
 	exit();
 }
 else{
-$sql = mysqli_query($conn, "SELECT count(*) as total from login WHERE log_id='".$email."' and log_pwd = '".$password."'");
-$row = mysqli_fetch_array($sql);
-$sql2 = mysqli_query($conn, "SELECT * from login WHERE log_id='".$email."' ");
-$row2 = mysqli_fetch_array($sql2);
 
-if($row["total"]>0){
+	$hash1 = mysqli_query($conn, "SELECT * from login WHERE log_id = '".$email."' ");
+	$sql2 = mysqli_query($conn, "SELECT * from login WHERE log_id='".$email."' ");
+	$row2 = mysqli_fetch_array($sql2);
+	 if ($hash1->num_rows === 1) {
+			$hash = $hash1->fetch_array(MYSQLI_ASSOC);
+	 }
+if(password_verify($password, $hash['log_pwd'])){
 	$sqll = mysqli_query($conn, "SELECT * from login where log_id = '".$email."'  or log_email='".$email."'");
 	$roww = mysqli_fetch_array($sqll);
 	if($roww["flag"]=='1'){
