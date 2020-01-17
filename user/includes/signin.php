@@ -16,14 +16,35 @@ else{
 	$hash1 = mysqli_query($conn, "SELECT * from login WHERE log_id = '".$email."' ");
 	$sql2 = mysqli_query($conn, "SELECT * from login WHERE log_id='".$email."' ");
 	$row2 = mysqli_fetch_array($sql2);
-	 if ($hash1->num_rows === 1) {
+	if ($hash1->num_rows === 1) {
 			$hash = $hash1->fetch_array(MYSQLI_ASSOC);
-	 }
+	}
 if(password_verify($password, $hash['log_pwd'])){
 	$sqll = mysqli_query($conn, "SELECT * from login where log_id = '".$email."'  or log_email='".$email."'");
 	$roww = mysqli_fetch_array($sqll);
 	if($roww["flag"]=='1'){
 	$_SESSION["log_id"] = $roww["log_id"];
+	
+	// // Email activation
+	
+	
+	// // Send email function
+	// function send_email($email,$sub,$msg,$header){
+	// 	return mail($email,$sub,$msg,$header);
+	// }
+	
+	// // Calling mail function
+	// $subject = "Activate your account now."
+	// $msg = "Please Click on the link below to activate your account https://localhost/Alumni/activate.php?Email=$email&Code=$validation_code";
+	// $header = "From No-Reply admin@institutealumni.com"
+	
+	// send_email($email,$subject,$msg,$header);
+	
+	
+	// // Email activation ends
+	
+	
+	
 	?>
 	<script>
 		window.location.assign("../profile/mypage.php");
